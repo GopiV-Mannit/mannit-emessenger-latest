@@ -1,0 +1,48 @@
+.title h1 {
+    text-align: center;
+    font-family: 'Unbounded', sans-serif;
+    font-size: 40px;
+    font-weight: 400;
+
+}
+
+.title span:last-child {
+    color: #4f4d4d;
+}
+
+.title span:first-child {
+    color: #FDD116;
+    width: 8ch;
+}
+
+#titleText {
+    position: relative;
+    overflow: hidden;
+
+}
+
+.transform-text {
+    display: inline-block;
+    animation: transformText 5s infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes transformText {
+
+    0%,
+    100% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+
+    25%,
+    75% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    50% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+}
